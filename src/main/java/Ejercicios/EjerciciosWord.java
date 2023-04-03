@@ -64,46 +64,75 @@ public class EjerciciosWord {
 //		q) matriculaCoche                                      r) contador 
 //		s) mayorDeEdad  (valores: verdadero/falso)             t) tallaCamiseta (valores: S, L, XL...) 
 
-		int edad = 18;
-		double altura = 1.72;
-		String nombre = "Alejandro";
-		double iva = 15;
-		double peso = 55;
-		boolean alumnoRepetidor = true;
-		char letra = 'A';
-		double minutos = 30.5;
-		String matriculaCoche = "BA14T";
-		boolean mayorDeEdad = true;
-		String codigiPostal = "08400";
-		char genero = 'M';
-		int numeroDeHijos = 0;
-		int tallaCamisa = 36;
-		double precio = 40000;
-		String mensaje = "Vendra ya el trabajo en SPF";
-		int mayorEdad = 18;
-		String[] dias = { "Lunes", "Martes", "Miercoles", "etc" };
-		int contador = 0;
-		String tallaCamiseta = "Mediana";
+//		int edad = 18;
+//		double altura = 1.72;
+//		String nombre = "Alejandro";
+//		double iva = 15;
+//		double peso = 55;
+//		boolean alumnoRepetidor = true;
+//		char letra = 'A';
+//		double minutos = 30.5;
+//		String matriculaCoche = "BA14T";
+//		boolean mayorDeEdad = true;
+//		String codigiPostal = "08400";
+//		char genero = 'M';
+//		int numeroDeHijos = 0;
+//		int tallaCamisa = 36;
+//		double precio = 40000;
+//		String mensaje = "Vendra ya el trabajo en SPF";
+//		int mayorEdad = 18;
+//		String[] dias = { "Lunes", "Martes", "Miercoles", "etc" };
+//		int contador = 0;
+//		String tallaCamiseta = "Mediana";
 
 //		Ejercicio #4
 //		Declara 2 variables numéricas enteras (con el valor que desees), he indica cual es mayor de los dos. 
 //		Si son iguales indicarlo también. Ves cambiando los valores para comprobar que funciona.
 
-		String resp;
-		do {
-			int a = 0, b = 0;
-			System.out.println("Dame el valor de a:");
-			a = scan.nextInt();
-			System.out.println("Dame el valor de b:");
-			b = scan.nextInt();
-			if (a > b) {
-				System.out.println("El valor a=" + a + " Es mayor que b=" + b);
-			} else if (a < b) {
-				System.out.println("El valor a=" + a + " Es menor que b=" + b);
-			} else
-				System.out.println("El valor a=" + a + " Es igual que b=" + b);
+		String resp=null;
+//		do {
+//			int a = 0, b = 0;
+//			System.out.println("Dame el valor de a:");
+//			a = scan.nextInt();
+//			System.out.println("Dame el valor de b:");
+//			b = scan.nextInt();
+//			if (a > b) {
+//				System.out.println("El valor a=" + a + " Es mayor que b=" + b);
+//			} else if (a < b) {
+//				System.out.println("El valor a=" + a + " Es menor que b=" + b);
+//			} else
+//				System.out.println("El valor a=" + a + " Es igual que b=" + b);
+//			System.out.println("Quieres probar de nuevo?");
+//			resp = scan.next();
+//		} while (resp.equals("si");
+//		
+//		
+//		Ejercicio #5 
+//		Crea un programa donde te pida un número y muestra si es positivo o negativo y si es par o impar 
+
+		do{ 
+			int num;
+			System.out.println("Dame el valor del numero:");
+			num = scan.nextInt();
+
+			if (num < 0)
+				System.out.println("El numero es NEGATIVO:" + num);
+			else if (num > 0)
+				System.out.println("El numero es POSITIVO:" + num);
+			else
+				System.out.println("El numero numero es 0:" + num);
+
+			
+			if (num==0)
+				System.out.println("Tu numero es 0 por lo tanto no puede ser par o inpar");
+			else {
+			if (num % 2 == 0)
+				System.out.println("El numero es PAR:" + num);
+			else 
+				System.out.println("El numero es IMPAR:" + num);
+			}
 			System.out.println("Quieres probar de nuevo?");
 			resp = scan.next();
-		} while (resp == "no");
+		}while (resp.equals("si"));
 	}
 }
