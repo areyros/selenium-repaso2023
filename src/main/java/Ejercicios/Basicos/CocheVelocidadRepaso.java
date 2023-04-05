@@ -27,7 +27,7 @@ public class CocheVelocidadRepaso {
 			if (velocidad > limiteVelocidadZonaEscolar)
 				System.out.println("Estas a exceso de velocidad en ZONA ESCOLAR");
 			else
-				System.out.println("Vas bajo el limite de velocidad de zona escolar");			
+				System.out.println("Vas bajo el limite de velocidad de zona escolar");
 			System.out.println("Limite carretera: " + limiteVelocidadCarretera);
 			System.out.println("Limite zona escolar: " + limiteVelocidadZonaEscolar);
 			System.out.println("Limite calle normal: " + limiteVelocidadCalleNormal);
